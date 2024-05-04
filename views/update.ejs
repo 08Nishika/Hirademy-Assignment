@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Assistant</title>
+  <!-- base:css -->
+
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/assets/dist/css/styles.css">
+  <!-- endinject -->
+  
+</head>
+<body>
+    <div id="registration-form">
+        <div class='fieldset'>
+       
+<form method="POST" action="/updateform/<%=assistant[0].id%>">
+    <input type="text" name="name" value="<%= assistant[0].name %>">
+    <input type="text" name="mobile" value="<%= assistant[0].mobile %>">
+    <input type="text" name="email" value="<%= assistant[0].email %>">
+    <input type="text" name="salary" value="<%= assistant[0].salary %>">
+    <input type="text" name="city" value="<%= assistant[0].city %>">
+    <input type="text" name="country" value="<%= assistant[0].country %>">
+    <input type="text" name="department" value="<%= assistant[0].department %>">
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+</div>
+</div>
+
+</body>
+</html>

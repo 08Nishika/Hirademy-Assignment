@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Assistant</title>
+  <!-- base:css -->
+
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/assets/dist/css/styles.css">
+  <!-- endinject -->
+  
+</head>
+
+<body>
+  <div class="mybtn">
+    <button class="addass"><a href="/forms" style="color:white;">ADD</a></button>
+  </div>
+ 
+      <div class="main-panel">
+        <div class="content-wrapper" style="width: 119%;">
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+             
+                  <p class="card-description">
+                
+                  </p>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr style="background-color: black;color: white;">
+                          <th>id</th>
+                          <th>Name</th>
+                          <th>Mobile</th>
+                          <th>Email</th>
+                          <th>Salary</th>
+                          <th>City</th>
+                          <th>Country</th>
+                          <th>Department</th>
+                          <th>Operations</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <% for (let i = 0; i < assistants.length; i++) { %>
+                            <tr>
+                                <td><%= assistants[i].id %></td>
+                                <td><%= assistants[i].name %></td>
+                                <td><%= assistants[i].mobile %></td>
+                                <td><%= assistants[i].email %></td>
+                                <td><%= assistants[i].salary %></td>
+                                <td><%= assistants[i].city %></td>
+                                <td><%= assistants[i].country %></td>
+                                <td><%= assistants[i].department %></td>
+                                <td>
+                                    <button type="button" class="btn btn-success"><a href="/update?id=<%= assistants[i].id %>" style="color: white;">UPDATE</a></button>
+                                    <button type="button" class="btn btn-danger"><a href="/delete?id=<%= assistants[i].id %>" style="color:white;">DELETE</a></button>
+                                </td>
+                            </tr>                                                        
+                        <% } %>
+                    </tbody>
+                    
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+         
+        </footer>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+
+ 
+</body>
+
+</html>

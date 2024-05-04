@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "c06aeb8a-0073-4c04-9801-dc55fe87963e",
+		"name": "Hirademy Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34703616"
+	},
+	"item": [
+		{
+			"name": "Retrieving details of all assistants",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update details of existing assistant",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "nishika garg",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "7477030826",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "gargnishu55@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "50000",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "gwalior",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "india",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "cse",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/assistant/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assistant",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding details of new assistant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "rahul rawat",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "46886786864",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rahul@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "5000000000000",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "teeeeeekaaaaaaaammmmmgarrrrhhhhhh",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "pakistan",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "terrorism",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/assistant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assistant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete assistant with specific id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/assistant/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assistant",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
